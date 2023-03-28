@@ -34,3 +34,11 @@ dotnet new gitignore
 
 
 ignore appsettings.json and put confidential settings in there
+
+## Client app
+npx create-react-app client-app --use-npm --template typescript
+
+## style
+https://react.semantic-ui.com/
+ npm install semantic-ui-react semantic-ui-css
+ `import 'semantic-ui-css/semantic.min.css'`
