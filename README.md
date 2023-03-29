@@ -1,5 +1,8 @@
 https://www.nuget.org/packages/dotnet-ef
 
+## class repo
+https://github.com/TryCatchLearn/Reactivities
+
 install dotnet entity framework
 dotnet tool list -g
 or
@@ -42,3 +45,28 @@ npx create-react-app client-app --use-npm --template typescript
 https://react.semantic-ui.com/
  npm install semantic-ui-react semantic-ui-css
  `import 'semantic-ui-css/semantic.min.css'`
+
+ ## architecture
+
+ Controller <--> Application
+ API Controller -> Mediator.Send() -> Mediator handler -> Object out 
+ use case: get activity from DB
+
+ CQRS: commands (no returns, modify state) vs queries separation (returns a value, doesn't  modify state)
+
+ Persistence gets updated or queried by command/query
+ eventual consistency to copy denormalized data (like mongodb) from command db to query db
+
+
+
+MediatR.Extensions.Microsoft.DependencyInjection by Jimmy Bogard
+v11.1.0
+MediatR extensions for ASP.NET Core   -> Application.csproj
+## Edit
+Automapper
+AutoMapper.Extensions.Microsoft.DependencyInjection by Jimmy Bogard
+v12.0.0
+AutoMapper extensions for ASP.NET Core
+
+
+
